@@ -1,0 +1,73 @@
+table {
+    border: 2px black solid;
+    border-collapse: separate;
+    margin: 100px 200px;
+}
+    
+.container {
+    padding: 20px; 
+    width: auto; 
+    height: 350px;
+    grid-template-areas: "a b c c "
+                         "a b d d "; 
+    /* grid-template-rows: 175px 175px; */
+    /* grid-template-columns: repeat(4,200px); */
+
+}
+
+.a {
+    grid-area: a;
+    background-color: red;
+    margin:50px 30px;
+}
+
+.b{
+    grid-area: b; 
+    background-color: yellow;
+    margin:50px 30px; 
+}
+
+.c{
+    grid-area: c; 
+    background-color:green; 
+    margin:40px 20px; 
+
+}
+
+.d{
+    grid-area:d;
+    background-color: red;
+    margin:40px 20px; 
+}
+
+.e{
+    background-color: greenyellow;
+    display: grid; 
+    padding: 20px; 
+    width: auto; 
+    height: 350px;
+
+}
+
+table, th{
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-style: solid;
+  }
+  
+  /* tr:nth-child(even) {
+    background-color: #dddddd;
+  } */
+
+  td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    border-style: solid;
+  }
+
+  .column {
+    float: left;
+    width: 25%;
+    padding: 125px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
